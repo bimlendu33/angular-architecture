@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build-themes": "sass --load-path=node_modules src/assets/themes:src/assets/themes",
+    "build-themes": "sass --no-source-map --load-path=node_modules src/assets/themes:src/assets/themes",
     "build": "ng build",
     "start": "npm-run-all --parallel watch-themes serve",
-    "watch-themes": "npm run build-themes && sass --watch src/assets/themes:src/assets/themes",
+    "watch-themes": "npm run build-themes && sass --no-source-map --watch src/assets/themes:src/assets/themes",
     "serve": "ng serve"
   },
   "private": true,
