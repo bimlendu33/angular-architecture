@@ -1,0 +1,23 @@
+// Override Bootstrap variables
+$primary: #cc0000; // company3 primary color
+$secondary: #ff6600; // company3 secondary color
+$success: #ff9933;
+$info: #ffcc66;
+$warning: #ff9900;
+$danger: #cc3300;
+$light: #f5e6e6;
+$dark: #4d2600;
+// Import Bootstrap to apply the custom variables
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: white;
+}
+
+.navbar-custom {
+  background-color: #cc0000 !important;
+}
+
+footer {
+  background-color: #cc0000 !important;
+}

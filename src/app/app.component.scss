@@ -1,0 +1,29 @@
+/* Add custom styles here if needed */
+.navbar-custom {
+  background-color: #001f3f; /* Navy blue */
+  z-index: 1000; /* Ensure navbar appears on top */
+}
+.footer {
+  background-color: #001f3f; /* Navy blue */
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.img-fluid {
+  mix-blend-mode: multiply;
+}
+
+/* Fix navbar position when expanded on small devices */
+@media (max-width: 991.98px) {
+  .navbar-collapse.collapsing.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1001; /* Ensure navbar appears on top of body */
+    background-color: #001f3f; /* Navy blue */
+  }
+}

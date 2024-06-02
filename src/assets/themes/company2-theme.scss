@@ -1,0 +1,23 @@
+$primary: #663399; // company4 primary color
+$secondary: #9966cc; // company4 secondary color
+$success: #cc99ff;
+$info: #b3b3cc;
+$warning: #ffcc66;
+$danger: #990033;
+$light: #e6e6fa;
+$dark: #2e2e2e;
+
+// Import Bootstrap to apply the custom variables
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-custom {
+  background-color: #663399 !important;
+}
+
+footer {
+  background-color: #663399 !important;
+}
+
+body {
+  color: $primary;
+}

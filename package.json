@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "build-themes": "sass --load-path=node_modules src/assets/themes:src/assets/themes",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "npm-run-all --parallel watch-themes serve",
+    "watch-themes": "npm run build-themes && sass --watch src/assets/themes:src/assets/themes",
+    "serve": "ng serve"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +19,12 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "postcss": "^8.4.38",
     "rxjs": "~7.5.0",
+    "sass": "^1.77.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -28,6 +34,7 @@
     "@angular/compiler-cli": "~13.3.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "autoprefixer": "^10.4.19",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

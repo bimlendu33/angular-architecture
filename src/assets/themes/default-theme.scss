@@ -1,0 +1,16 @@
+$primary: #006699; // company2 primary color
+$secondary: #009966; // company2 secondary color
+$success: #66ccff;
+$info: #3399ff;
+$warning: #ffcc00;
+$danger: #cc3300;
+$light: #f2f2f2;
+$dark: #333333;
+
+// Import Bootstrap to apply the custom variables
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  color: $primary;
+}
+
