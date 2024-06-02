@@ -12,6 +12,7 @@ $dark: #2e2e2e;
 
 .navbar-custom {
   background-color: #663399 !important;
+  color: $primary;
 }
 
 footer {
@@ -20,4 +21,8 @@ footer {
 
 body {
   color: $primary;
+}
+
+.test{
+  color: orange;
 }

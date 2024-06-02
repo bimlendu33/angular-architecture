@@ -11846,6 +11846,7 @@ textarea.form-control-lg {
 }
 .navbar-custom {
   background-color: #663399 !important;
+  color: #663399;
 }
 
 footer {
@@ -11854,6 +11855,10 @@ footer {
 
 body {
   color: #663399;
+}
+
+.test {
+  color: orange;
 }
 
 /*# sourceMappingURL=company2-theme.css.map */
